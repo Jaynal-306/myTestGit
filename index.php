@@ -130,4 +130,48 @@
     }
 
 }
-$obj = New MyClass("This is test paramiter for this class");*/
+$obj = New MyClass("This is test paramiter for this class");
+
+class Example{
+	private $num1 = "johir and";
+	private $num2 = "kobir Tow brother";
+	public function addTwo(){
+		$num3 = $this->num1;
+		$num4 = $this->num2;
+		echo $num3;
+		echo $num4;
+	}
+}
+$result = new Example();
+$result->addTwo();
+
+class City{
+	public static $cityList = array(
+		'Dhaka',
+		'Rangpur',
+		'Rajshahi'
+	);
+}
+echo City::$cityList[1];*/
+//====================
+class Fruit {
+	public $name;
+	public $color;
+	
+	function setName($name)
+	{
+		$this->name = $name;
+	}
+	function getName()
+	{
+		return $this->name;
+	}
+}
+$apple = new Fruit();
+$banana = new Fruit();
+$apple->setName("Apple");
+$banana->setName("Banana");
+
+echo $apple->getName();
+echo "<br>";
+echo $banana->getName();
